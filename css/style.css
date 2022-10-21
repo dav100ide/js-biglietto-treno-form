@@ -1,0 +1,26 @@
+/* ==========================
+      my variables   
+========================= */
+:root {
+   --ms_primary-bg-color: #94000c;
+   --ms_seconday-bg-color: gray;
+}
+/* ==========================
+      commons   
+========================= */
+body {
+   background-color: var(--ms_primary-bg-color);
+   color: white;
+}
+
+.ms_card {
+   background-color: white;
+   color: var(--ms_primary-bg-color);
+}
+
+input {
+   border-color: var(--ms_primary-bg-color);
+}
+/* ==========================
+      calculator   
+========================= */
