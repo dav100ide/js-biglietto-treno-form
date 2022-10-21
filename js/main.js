@@ -1,2 +1,3 @@
 const userName = document.getElementById('user-name').value;
-console.log(typeof userName, userName);
+const km = Number(document.getElementById('km').value);
+console.log(typeof km, km, "non capisco perchè il valore è zero, anche se nell'input ho messo un Number");
