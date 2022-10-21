@@ -5,16 +5,40 @@
    --ms_primary-bg-color: #94000c;
    --ms_seconday-bg-color: gray;
 }
+
+/* ==========================
+      my reset   
+========================= */
+button {
+   color: inherit;
+}
+
 /* ==========================
       commons   
 ========================= */
+
 body {
    background-color: var(--ms_primary-bg-color);
+}
+
+/* ==========================
+      typography   
+========================= */
+
+h2 {
    color: white;
 }
 
+/* ==========================
+      components   
+========================= */
+
 .ms_card {
    background-color: white;
+}
+
+#calculator .ms_card {
+   /* la prima card */
    color: var(--ms_primary-bg-color);
 }
 
