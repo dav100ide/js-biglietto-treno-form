@@ -59,8 +59,9 @@ h2 {
    background-color: var(--ms_seconday-color);
 }
 
-.ms_card :is(input:active, button:active, select:active) {
+.ms_card :is(input:focus, button:focus, select:focus) {
    border-color: orange;
+   outline: none;
 }
 
 /* ==========================
@@ -92,4 +93,14 @@ h2 {
 
 .ms_card__ticket h4 {
    margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 991.98px) {
+   .ms_card__ticket div:has(h4) {
+      border: 1px solid gray;
+   }
+
+   .ms_card__ticket {
+      border: none;
+   }
 }
