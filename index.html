@@ -14,7 +14,7 @@
       <!-- sezione calcolatore -->
       <section id="calculator">
          <div class="container-lg p-4">
-            <h2 class="text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+            <h2 class="text-center fw-bold fs-1">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
             <div class="ms_card p-5 text-center">
                <form action="">
                   <!-- campo input -->
@@ -46,10 +46,10 @@
                   <!-- bottoni del calcolatore -->
                   <div class="row gx-2 mt-5 justify-content-center gx-4">
                      <div class="col-auto">
-                        <button type="button" id="show-ticket">Genera</button>
+                        <button type="button" id="show-ticket" class="fw-bold">Genera</button>
                      </div>
                      <div class="col-auto">
-                        <button type="reset" id="cancel">Annulla</button>
+                        <button type="reset" id="cancel" class="fw-bold">Annulla</button>
                      </div>
                   </div>
                   <!-- /bottoni del calcolatore -->
@@ -59,33 +59,35 @@
       </section>
       <!-- /sezione calcolatore -->
       <!-- sezione biglietto -->
-      <section id="ticket" class="d-none">
+      <section id="ticket" class="d-nonè">
          <div class="container py-4">
-            <h2>IL TUO BIGLIETTO</h2>
+            <h2 class="text-center fw-bold fs-1">IL TUO BIGLIETTO</h2>
             <div class="ms_card p-5">
                <h3>DETTAGLIO PASSEGGERI</h3>
                <!-- biglietto -->
                <div class="ms_card__ticket">
                   <div class="row">
-                     <div class="col-4">
-                        <h3>NOME PASSEGGERO</h3>
-                        <div id="passenger-name"></div>
+                     <div class="col-lg-4 col-12">
+                        <div class="passenger-name p-4 h-100">
+                           <h3 class="fw-bold">NOME PASSEGGERO</h3>
+                           <div id="passenger-name" class="fw-bold fs-3"></div>
+                        </div>
                      </div>
-                     <div class="col-auto">
-                        <h4>Offerta</h4>
-                        <div id="discount-type"></div>
+                     <div class="col p-4">
+                        <h4 class="fw-bold">Offerta</h4>
+                        <div id="discount-type" class="h4"></div>
                      </div>
-                     <div class="col-auto">
-                        <h4>Carrozza</h4>
-                        <div id="wagon"></div>
+                     <div class="col p-4">
+                        <h4 class="fw-bold">Carrozza</h4>
+                        <div id="wagon" class="h4"></div>
                      </div>
-                     <div class="col-auto">
-                        <h4>Codice CP</h4>
-                        <div id="cp-code"></div>
+                     <div class="col p-4">
+                        <h4 class="fw-bold">Codice CP</h4>
+                        <div id="cp-code" class="h4"></div>
                      </div>
-                     <div class="col-auto">
-                        <h4>Costo Biglietto</h4>
-                        <div id="ticket-price"></div>
+                     <div class="col p-4">
+                        <h4 class="fw-bold">Costo Biglietto</h4>
+                        <div id="ticket-price" class="h4"></div>
                      </div>
                   </div>
                </div>
