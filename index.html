@@ -16,54 +16,81 @@
          <div class="container-lg p-4">
             <h2 class="text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
             <div class="ms_card p-5 text-center">
-               <!-- campo input -->
-               <div class="row">
-                  <div class="col-12 col-lg-4 text-center">
-                     <label for="user-name">
-                        <div class="ms_input-title">nome cognome</div>
-                        <input type="text" id="user-name" />
-                     </label>
+               <form action="">
+                  <!-- campo input -->
+                  <div class="row">
+                     <div class="col-12 col-lg-4 text-center">
+                        <label for="user-name">
+                           <div class="ms_input-title">nome cognome</div>
+                           <input type="text" id="user-name" />
+                        </label>
+                     </div>
+                     <div class="col-12 col-lg-4 text-center">
+                        <label for="km">
+                           <div class="ms_input-title">kilometri da percorrere</div>
+                           <input type="text" id="km" />
+                        </label>
+                     </div>
+                     <div class="col-12 col-lg-4 text-center">
+                        <label for="age">
+                           <div class="ms_input-title">fascia d'età</div>
+                           <select name="age" id="age">
+                              <option value="adult">Maggiorenne</option>
+                              <option value="minor">Minorenne</option>
+                              <option value="over-65">Over 65</option>
+                           </select>
+                        </label>
+                     </div>
                   </div>
-                  <div class="col-12 col-lg-4 text-center">
-                     <label for="km">
-                        <div class="ms_input-title">kilometri da percorrere</div>
-                        <input type="text" id="km" />
-                     </label>
+                  <!-- /campo input -->
+                  <!-- bottoni del calcolatore -->
+                  <div class="row gx-2 mt-5 justify-content-center gx-4">
+                     <div class="col-auto">
+                        <button type="button" id="show-ticket">Genera</button>
+                     </div>
+                     <div class="col-auto">
+                        <button type="reset" id="cancel">Annulla</button>
+                     </div>
                   </div>
-                  <div class="col-12 col-lg-4 text-center">
-                     <label for="age">
-                        <div class="ms_input-title">fascia d'età</div>
-                        <select name="age" id="age">
-                           <option value="adult">Maggiorenne</option>
-                           <option value="minor">Minorenne</option>
-                           <option value="over-65">Over 65</option>
-                        </select>
-                     </label>
-                  </div>
-               </div>
-               <!-- /campo input -->
-               <!-- bottoni del calcolatore -->
-               <div class="row gx-2 mt-5 justify-content-center gx-4">
-                  <div class="col-auto">
-                     <button id="show-price">Genera</button>
-                  </div>
-                  <div class="col-auto">
-                     <button>Annulla</button>
-                  </div>
-               </div>
-               <!-- /bottoni del calcolatore -->
+                  <!-- /bottoni del calcolatore -->
+               </form>
             </div>
          </div>
       </section>
       <!-- /sezione calcolatore -->
       <!-- sezione biglietto -->
-      <section>
+      <section id="ticket" class="d-none">
          <div class="container py-4">
             <h2>IL TUO BIGLIETTO</h2>
-            <div class="ms_card">
+            <div class="ms_card p-5">
                <h3>DETTAGLIO PASSEGGERI</h3>
+               <!-- biglietto -->
+               <div class="ms_card__ticket">
+                  <div class="row">
+                     <div class="col-4">
+                        <h3>NOME PASSEGGERO</h3>
+                        <div id="passenger-name"></div>
+                     </div>
+                     <div class="col-auto">
+                        <h4>Offerta</h4>
+                        <div id="discount-type"></div>
+                     </div>
+                     <div class="col-auto">
+                        <h4>Carrozza</h4>
+                        <div id="wagon"></div>
+                     </div>
+                     <div class="col-auto">
+                        <h4>Codice CP</h4>
+                        <div id="cp-code"></div>
+                     </div>
+                     <div class="col-auto">
+                        <h4>Costo Biglietto</h4>
+                        <div id="ticket-price"></div>
+                     </div>
+                  </div>
+               </div>
+               <!-- /biglietto -->
             </div>
-            <p id="final-price"></p>
          </div>
       </section>
       <!-- /sezione biglietto -->

@@ -2,8 +2,8 @@
       my variables   
 ========================= */
 :root {
-   --ms_primary-bg-color: #94000c;
-   --ms_seconday-bg-color: gray;
+   --ms_primary-color: #b91450;
+   --ms_seconday-color: #cecece;
 }
 
 /* ==========================
@@ -18,7 +18,7 @@ button {
 ========================= */
 
 body {
-   background-color: var(--ms_primary-bg-color);
+   background-color: var(--ms_primary-color);
 }
 
 /* ==========================
@@ -37,14 +37,44 @@ h2 {
    background-color: white;
 }
 
-#calculator .ms_card {
-   /* la prima card */
-   color: var(--ms_primary-bg-color);
+.ms_card .ms_input-title {
+   font-size: 1.5rem;
+   margin-bottom: 1.25rem;
 }
 
-input {
-   border-color: var(--ms_primary-bg-color);
+.ms_card input,
+.ms_card select {
+   border-radius: 0.5rem;
+   padding: 0.5rem 0;
+   text-align: center;
+   font-size: 1.2rem;
+   border-color: var(--ms_primary-color);
 }
+
+.ms_card button {
+   font-size: 1.5rem;
+   font-weight: bold;
+   padding: 0.5rem;
+   border-radius: 0.8rem;
+   border: 1px solid black;
+   background-color: var(--ms_seconday-color);
+}
+
+.ms_card :is(input:active, button:active, select:active) {
+   border-color: orange;
+}
+
+#calculator .ms_card {
+   /* la prima card */
+   color: var(--ms_primary-color);
+   border-radius: 1rem;
+   box-shadow: 0.0625rem 0.125rem 0.3125rem 0.125rem var(--ms_seconday-color);
+}
+.ms_card__ticket {
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+}
+
 /* ==========================
-      calculator   
+      sezione ticket   
 ========================= */
